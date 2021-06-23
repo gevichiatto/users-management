@@ -3,15 +3,14 @@
     <Header/>
     <div class="container mrgnbtm"  style="display: flex; justify-content: center; flex-wrap: wrap;flex-direction: column;">
           <div class="row">
-            <div class="col-md-12">
+            <!-- <div class="col-md-12"> -->
                 <CargoGerenciamento/>
-            </div>
-            <!-- <div class="col-md-8">
-                <CreateCargo @createUser="userCreate($event)" />
-            </div> -->
-            <!-- <div class="col-md-4">
-                <DisplayBoard :numberOfUsers="numberOfUsers" @getAllUsers="getAllUsers()" />
-            </div> -->
+            <!-- </div> -->
+          </div>
+          <div class="row">
+            <!-- <div class="col-md-12"> -->
+                <PerfilGerenciamento/>
+            <!-- </div> -->
           </div>
     </div>
     <div class="row mrgnbtm">
@@ -25,6 +24,7 @@ import Header from './header.vue'
 // import CreateUser from './createUser.vue'
 // import CreateCargo from './createCargo.vue'
 import CargoGerenciamento from './cargoGerenciamento.vue'
+import PerfilGerenciamento from './perfilGerenciamento.vue'
 // import DisplayBoard from './displayBoard.vue'
 import Users from './users.vue'
 import { getAllUsers, createUser } from '../services/userService'
@@ -35,6 +35,7 @@ export default {
     Header,
     // CreateCargo,
     CargoGerenciamento,
+    PerfilGerenciamento,
     // DisplayBoard,
     Users
   },

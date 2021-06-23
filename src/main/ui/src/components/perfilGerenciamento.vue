@@ -2,10 +2,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 mrgnbtm">
-                <h2 class="titles">Gerenciamento de Cargos</h2>
+                <h2 class="titles">Gerenciamento de Perfis de Usuários</h2>
                 <div class="row">
-                    <button type="button" @click='showModal()' class="col-md-4 btn btn-cadastro">Cadastro de cargos</button>
-                    <button type="button" @click='showTabela()' class="col-md-4 btn btn-cadastro">Listar cargos</button>
+                    <button type="button" @click='showModal()' class="col-md-4 btn btn-cadastro">Cadastrar Perfil</button>
+                    <button type="button" @click='showTabela()' class="col-md-4 btn btn-cadastro">Listar Perfil</button>
                 </div>
             </div>
         </div>
@@ -16,7 +16,7 @@
                         <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th>Nome do Cargo</th>
+                                <th>Nome do Perfil</th>
                                 <th>Ação</th>
                             </tr>
                         </thead>
@@ -31,18 +31,18 @@
                 
             </div>
         </div>
-        <!-- Modal de Cadastro de Cargos -->
-        <modal name="modalCadastroCargo">
-            <h4 class="modal-titles modal-header">Cadastro de cargos</h4>
+        <!-- Modal de Cadastro de Perfil -->
+        <modal name="modalCadastroPerfil">
+            <h4 class="modal-titles modal-header">Cadastro de perfil</h4>
             <form>
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label>Nome do Cargo</label>
-                        <input type="text" class="form-control" v-model="cargoName" name="cargoName" id="cargoName" aria-describedby="emailHelp" placeholder="Nome do Cargo" />
+                        <label>Nome do Perfil</label>
+                        <input type="text" class="form-control" v-model="perfilName" name="perfilName" id="perfilName" aria-describedby="emailHelp" placeholder="Nome do Perfil" />
                     </div>
                 </div>
                 <div class="row">
-                    <button type="button" @click='createCargo()' class="btn btn-cadastro">Cadastrar</button>
+                    <button type="button" @click='createPerfil()' class="btn btn-cadastro">Cadastrar</button>
                 </div>
             </form>
         </modal>
@@ -51,23 +51,23 @@
 
 <script>
 export default {
-    name: 'createCargo',
+    name: 'createPerfil',
     data() {
         return {
-            cargoName: '',
+            perfilName: '',
             results: false
         }
     },
     methods: {
         showModal() {
-            this.$modal.show('modalCadastroCargo',);
+            this.$modal.show('modalCadastroPerfil',);
             this.clearForm();
         },
         showTabela() {
             this.results = !this.results;
         },
         clearForm() {
-            this.cargoName = "";
+            this.perfilName = "";
         }
     },
 }
