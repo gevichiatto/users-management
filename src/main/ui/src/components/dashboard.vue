@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <Header />
+    <Header/>
     <div class="container mrgnbtm"  style="display: flex; justify-content: center; flex-wrap: wrap;flex-direction: column;">
           <div class="row">
             <div class="col-md-12">

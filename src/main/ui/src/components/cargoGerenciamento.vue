@@ -13,7 +13,20 @@
         <div class="row">
             <div v-if="results" class="tableContainer">
                 <div class="tableContent">
-                    Tabela aqui
+                        <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Nome do Cargo</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="item in users" :key="item.id">
+                                <td>{{ item.id }}</td>
+                                <td>{{ item.firstName }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 
             </div>
