@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <Header />
-    <div class="container mrgnbtm"  style="display: flex; justify-content: center;">
+    <div class="container mrgnbtm"  style="display: flex; justify-content: center; flex-wrap: wrap;flex-direction: column;">
           <div class="row">
             <div class="col-md-12">
                 <CargoGerenciamento/>
@@ -60,9 +60,9 @@ export default {
         this.getAllUsers();
       });
     }
-  },
-  mounted () {
-    this.getAllUsers();
   }
+  // mounted () {
+  //   this.getAllUsers();
+  // }
 }
 </script>

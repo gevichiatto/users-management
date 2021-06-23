@@ -1,23 +1,23 @@
 .header {
-    padding: 1%;
-    background-color: rgb(65 197 185);
-    font-size: 35px;
-    text-align: center;
-    width: 100%;
-    color: white;
- }
+  padding: 1%;
+  background-color: rgb(65 197 185);
+  font-size: 35px;
+  text-align: center;
+  width: 100%;
+  color: whitesmoke;
+}
  
- .footer {
-   padding: 2%;
-    background-color: red;
-    font-size: 50px;
-    text-align: center;
-    width: 100%
- }
+.footer {
+  padding: 2%;
+  background-color: red;
+  font-size: 50px;
+  text-align: center;
+  width: 100%
+}
  
- .dashboard {
-   padding: 3% 1%;
- }
+.dashboard {
+  padding: 3% 1%;
+}
 
 h1 {
   text-align: center;
@@ -69,15 +69,15 @@ h1 {
   padding: 1rem 1rem;
 }
 
-/* .modal-header {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
-  border-top-left-radius: calc(.3rem - 1px);
-  border-top-right-radius: calc(.3rem - 1px);
-} */
+.tableContainer {
+  transition: .3s border-color;
+  border-top: 10px solid rgb(65 197 185);
+  width: 60%;
+  box-shadow: 0 0px 10px rgb(0 0 0 / 5%);
+  border-radius: 10px
+}
+
+.tableContent {
+  padding: 2rem 2rem;
+  background-color: white;
+}
