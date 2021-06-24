@@ -2,7 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 mrgnbtm">
-                <h2 class="titles">Gerenciamento de Perfis de Usuários</h2>
+                <div class="row">
+                    <h2 class="titles">Gerenciamento de Perfis de Usuários</h2>
+                </div>
                 <div class="row">
                     <button type="button" @click='showModal()' class="col-md-4 btn btn-cadastro">Cadastrar Perfil</button>
                     <button type="button" @click='showTabela()' class="col-md-4 btn btn-cadastro">Listar Perfis</button>
@@ -34,7 +36,7 @@
         <!-- Modal de Cadastro de Perfil -->
         <modal name="modalCadastroPerfil">
             <h4 class="modal-titles modal-header">Cadastro de perfil</h4>
-            <form>
+            <form class="modalBody">
                 <div class="row">
                     <div class="form-group col-md-6">
                         <label>Nome do Perfil</label>

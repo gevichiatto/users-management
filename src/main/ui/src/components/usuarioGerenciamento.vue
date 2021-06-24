@@ -2,7 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 mrgnbtm">
-                <h2 class="titles">Gerenciamento de Usuários</h2>
+                <div class="row">
+                    <h2 class="titles">Gerenciamento de Usuários</h2>
+                </div>
                 <div class="row">
                     <button type="button" @click='showModal()' class="col-md-4 btn btn-cadastro">Cadastrar Usuário</button>
                     <button type="button" @click='showTabela()' class="col-md-4 btn btn-cadastro">Listar Usuários</button>

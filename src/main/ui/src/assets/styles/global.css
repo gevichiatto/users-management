@@ -85,3 +85,7 @@ h1 {
 .modalBody {
   padding: 1.5rem 1.5rem;
 }
+
+.row {
+  justify-content: center!important;
+}
