@@ -12,6 +12,11 @@
                 <PerfilGerenciamento/>
             <!-- </div> -->
           </div>
+          <div class="row">
+            <!-- <div class="col-md-12"> -->
+                <UsuarioGerenciamento/>
+            <!-- </div> -->
+          </div>
     </div>
     <div class="row mrgnbtm">
         <Users v-if="users.length > 0" :users="users" />
@@ -25,6 +30,7 @@ import Header from './header.vue'
 // import CreateCargo from './createCargo.vue'
 import CargoGerenciamento from './cargoGerenciamento.vue'
 import PerfilGerenciamento from './perfilGerenciamento.vue'
+import UsuarioGerenciamento from './usuarioGerenciamento.vue'
 // import DisplayBoard from './displayBoard.vue'
 import Users from './users.vue'
 import { getAllUsers, createUser } from '../services/userService'
@@ -36,6 +42,7 @@ export default {
     // CreateCargo,
     CargoGerenciamento,
     PerfilGerenciamento,
+    UsuarioGerenciamento,
     // DisplayBoard,
     Users
   },
