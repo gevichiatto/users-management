@@ -53,17 +53,17 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label>Sexo</label>
-                            <input type="text" class="form-control" v-model="sexo" name="sexo" id="sexo" aria-describedby="emailHelp"/>
+                            <multiselect v-model="valueSexo" :options="optionsSexo" placeholder="Selecione um sexo" label="name" track-by="name"></multiselect>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label>Cargo</label>
-                            <multiselect v-model="value" :options="options" placeholder="Selecione um cargo" label="name" track-by="name"></multiselect>
+                            <multiselect v-model="valueCargo" :options="optionsCargo" placeholder="Selecione um cargo" label="name" track-by="name"></multiselect>
                         </div>
                         <div class="form-group col-md-6">
                             <label>Perfil</label>
-                            <input type="text" class="form-control" v-model="perfil" name="perfil" id="perfil" aria-describedby="emailHelp" placeholder="Perfil" />
+                            <multiselect v-model="valuePerfil" :options="optionsPerfil" placeholder="Selecione um perfil" label="name" track-by="name"></multiselect>
                         </div>
                     </div>
                     <div class="row">
@@ -83,12 +83,22 @@ export default {
             usuarioName: '',
             cpf: '',
             dataNascimento: '',
-            sexo: '',
-            cargo: '',
-            perfil: '',
             results: false,
-            value: null,
-            options: [
+            valueSexo: null,
+            optionsSexo: [
+                { name: 'M', language: 'JavaScript' },
+                { name: 'F', language: 'Elixir' }
+            ],
+            valueCargo: null,
+            optionsCargo: [
+                { name: 'Vue.js', language: 'JavaScript' },
+                { name: 'Rails', language: 'Ruby' },
+                { name: 'Sinatra', language: 'Ruby' },
+                { name: 'Laravel', language: 'PHP' },
+                { name: 'Phoenix', language: 'Elixir' }
+            ],
+            valuePerfil: null,
+            optionsPerfil: [
                 { name: 'Vue.js', language: 'JavaScript' },
                 { name: 'Rails', language: 'Ruby' },
                 { name: 'Sinatra', language: 'Ruby' },
