@@ -33,40 +33,42 @@
         </div>
         <!-- Modal de Cadastro de Usuário -->
         <modal name="modalCadastroUsuario" :height="500">
-            <h4 class="modal-titles modal-header">Cadastro de perfil</h4>
+            <h4 class="modal-titles modal-header">Cadastro de usuário</h4>
             <form>
-                <div class="row">
-                    <div class="form-group col-md-6">
-                        <label>Nome do Usuário</label>
-                        <input type="text" class="form-control" v-model="usuarioName" name="usuarioName" id="usuarioName" aria-describedby="emailHelp" placeholder="Nome do Usuário" />
+                <div class="modalBody">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label>Nome do Usuário</label>
+                            <input type="text" class="form-control" v-model="usuarioName" name="usuarioName" id="usuarioName" aria-describedby="emailHelp" placeholder="Nome do Usuário" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>CPF</label>
+                            <input type="text" class="form-control" v-model="cpf" name="cpf" id="cpf" aria-describedby="emailHelp" placeholder="CPF" />
+                        </div>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label>CPF</label>
-                        <input type="text" class="form-control" v-model="cpf" name="cpf" id="cpf" aria-describedby="emailHelp" placeholder="CPF" />
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label>Data de nascimento</label>
+                            <input type="date" class="form-control" v-model="dataNascimento" name="dataNascimento" id="dataNascimento" aria-describedby="emailHelp" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Sexo</label>
+                            <input type="text" class="form-control" v-model="sexo" name="sexo" id="sexo" aria-describedby="emailHelp"/>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-6">
-                        <label>Data de nascimento</label>
-                        <input type="date" class="form-control" v-model="dataNascimento" name="dataNascimento" id="dataNascimento" aria-describedby="emailHelp" />
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label>Cargo</label>
+                            <input type="text" class="form-control" v-model="cargo" name="cargo" id="cargo" aria-describedby="emailHelp" placeholder="Perfil" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Perfil</label>
+                            <input type="text" class="form-control" v-model="perfil" name="perfil" id="perfil" aria-describedby="emailHelp" placeholder="Perfil" />
+                        </div>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label>Sexo</label>
-                        <input type="text" class="form-control" v-model="sexo" name="sexo" id="sexo" aria-describedby="emailHelp"/>
+                    <div class="row">
+                        <button type="button" @click='createPerfil()' class="btn btn-cadastro">Cadastrar</button>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-6">
-                        <label>Cargo</label>
-                        <input type="text" class="form-control" v-model="cargo" name="cargo" id="cargo" aria-describedby="emailHelp" placeholder="Perfil" />
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label>Perfil</label>
-                        <input type="text" class="form-control" v-model="perfil" name="perfil" id="perfil" aria-describedby="emailHelp" placeholder="Perfil" />
-                    </div>
-                </div>
-                <div class="row">
-                    <button type="button" @click='createPerfil()' class="btn btn-cadastro">Cadastrar</button>
                 </div>
             </form>
         </modal>
@@ -75,7 +77,7 @@
 
 <script>
 export default {
-    name: 'createPerfil',
+    name: 'usuarioGerenciamento',
     data() {
         return {
             usuarioName: '',
@@ -84,7 +86,7 @@ export default {
             sexo: '',
             cargo: '',
             perfil: '',
-            results: false
+            results: false,
         }
     },
     methods: {

@@ -81,3 +81,7 @@ h1 {
   padding: 2rem 2rem;
   background-color: white;
 }
+
+.modalBody {
+  padding: 1.5rem 1.5rem;
+}

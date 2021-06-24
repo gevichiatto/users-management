@@ -51,7 +51,7 @@
 
 <script>
 export default {
-    name: 'createCargo',
+    name: 'cargoGerenciamento',
     data() {
         return {
             cargoName: '',

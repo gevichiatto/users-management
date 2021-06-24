@@ -51,7 +51,7 @@
 
 <script>
 export default {
-    name: 'createPerfil',
+    name: 'perfilGerenciamento',
     data() {
         return {
             perfilName: '',
