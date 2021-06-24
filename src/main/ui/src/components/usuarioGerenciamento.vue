@@ -59,7 +59,7 @@
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label>Cargo</label>
-                            <input type="text" class="form-control" v-model="cargo" name="cargo" id="cargo" aria-describedby="emailHelp" placeholder="Perfil" />
+                            <multiselect v-model="value" :options="options" placeholder="Selecione um cargo" label="name" track-by="name"></multiselect>
                         </div>
                         <div class="form-group col-md-6">
                             <label>Perfil</label>
@@ -87,6 +87,14 @@ export default {
             cargo: '',
             perfil: '',
             results: false,
+            value: null,
+            options: [
+                { name: 'Vue.js', language: 'JavaScript' },
+                { name: 'Rails', language: 'Ruby' },
+                { name: 'Sinatra', language: 'Ruby' },
+                { name: 'Laravel', language: 'PHP' },
+                { name: 'Phoenix', language: 'Elixir' }
+            ]
         }
     },
     methods: {

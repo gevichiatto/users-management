@@ -5,7 +5,7 @@
                 <h2 class="titles">Gerenciamento de Perfis de Usuários</h2>
                 <div class="row">
                     <button type="button" @click='showModal()' class="col-md-4 btn btn-cadastro">Cadastrar Perfil</button>
-                    <button type="button" @click='showTabela()' class="col-md-4 btn btn-cadastro">Listar Perfil</button>
+                    <button type="button" @click='showTabela()' class="col-md-4 btn btn-cadastro">Listar Perfis</button>
                 </div>
             </div>
         </div>
