@@ -5,6 +5,7 @@ target/
 !**/src/test/**/target/
 
 src/main/ui/node_modules
+src/main/ui/dist
 
 ### STS ###
 .apt_generated
