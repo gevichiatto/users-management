@@ -1,6 +1,6 @@
 .header {
   padding: 1%;
-  background-color: rgb(65 197 185);
+  background-color: rgba(65, 197, 185);
   font-size: 35px;
   text-align: center;
   width: 100%;
@@ -40,25 +40,26 @@ h1 {
 }
 
 .btn-cadastro {
-  background-color: rgb(65 197 185);
+  background-color: rgba(65, 197, 185);
   color: white;
   margin-right: 5%;
   margin-left: 5%;
   font-weight: 500;
-  box-shadow: 0 4px 8px rgb(32 160 255 / 30%);
+  box-shadow: 0 4px 8px rgba(32, 160, 255, 30%);
 }
 
 .btn-cadastro:hover {
-  background-color: rgb(48 167 157);
+  background-color: rgba(48, 167, 157);
+  color: white!important;
 }
 
 .titles {
-  color: rgb(81 102 100);
+  color: rgba(81, 102, 100);
   font-weight: 650;
 }
 
 .modal-titles {
-  color: rgb(81 102 100);
+  color: rgba(81, 102, 100);
   font-weight: 500;
   width: 100%;
   justify-content: center;
@@ -71,7 +72,7 @@ h1 {
 
 .tableContainer {
   transition: .3s border-color;
-  border-top: 10px solid rgb(65 197 185);
+  border-top: 10px solid rgba(65, 197, 185);
   width: 60%;
   box-shadow: 0 0px 10px rgb(0 0 0 / 5%);
   border-radius: 10px

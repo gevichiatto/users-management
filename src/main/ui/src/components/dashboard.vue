@@ -3,19 +3,13 @@
     <Header/>
     <div class="container mrgnbtm"  style="display: flex; justify-content: center; flex-wrap: wrap;flex-direction: column;">
           <div class="row">
-            <!-- <div class="col-md-12"> -->
-                <CargoGerenciamento/>
-            <!-- </div> -->
+            <CargoGerenciamento/>
           </div>
           <div class="row">
-            <!-- <div class="col-md-12"> -->
-                <PerfilGerenciamento/>
-            <!-- </div> -->
+            <PerfilGerenciamento/>
           </div>
           <div class="row">
-            <!-- <div class="col-md-12"> -->
-                <UsuarioGerenciamento/>
-            <!-- </div> -->
+            <UsuarioGerenciamento/>
           </div>
     </div>
     <div class="row mrgnbtm">

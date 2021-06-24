@@ -6,8 +6,8 @@
                     <h2 class="titles">Gerenciamento de Cargos</h2>
                 </div>
                 <div class="row">
-                    <button type="button" @click='showModal()' class="col-md-4 btn btn-cadastro">Cadastro de cargos</button>
-                    <button type="button" @click='showTabela()' class="col-md-4 btn btn-cadastro">Listar cargos</button>
+                    <button type="button" @click='showModal()' class="col-md-4 btn btn-cadastro">Cadastrar Cargo</button>
+                    <button type="button" @click='showTabela()' class="col-md-4 btn btn-cadastro">Listar Cargos</button>
                 </div>
             </div>
         </div>
