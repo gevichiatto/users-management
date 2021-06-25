@@ -3,7 +3,7 @@
     <Header/>
     <div class="container mrgnbtm"  style="display: flex; justify-content: center; flex-wrap: wrap;flex-direction: column;">
           <div class="row">
-            <CargoGerenciamento/>
+            <CargoGerenciamento @createCargo="cargoCreate($event)" />
           </div>
           <div class="row">
             <PerfilGerenciamento/>
@@ -20,12 +20,9 @@
 
 <script>
 import Header from './header.vue'
-// import CreateUser from './createUser.vue'
-// import CreateCargo from './createCargo.vue'
 import CargoGerenciamento from './cargoGerenciamento.vue'
 import PerfilGerenciamento from './perfilGerenciamento.vue'
 import UsuarioGerenciamento from './usuarioGerenciamento.vue'
-// import DisplayBoard from './displayBoard.vue'
 import Users from './users.vue'
 import { getAllUsers, createUser } from '../services/userService'
 
@@ -33,11 +30,9 @@ export default {
   name: 'Dashboard',
   components: {
     Header,
-    // CreateCargo,
     CargoGerenciamento,
     PerfilGerenciamento,
     UsuarioGerenciamento,
-    // DisplayBoard,
     Users
   },
   data() {
